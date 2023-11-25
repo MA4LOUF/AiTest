@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AiTest</string>
+    <string name="capture">Capture</string>
+    <string name="phototaken">PhotoTaken</string>
+</resources>
