@@ -2,6 +2,7 @@ plugins {
     id("com.android.application")
 }
 
+
 android {
     namespace = "com.example.aitest"
     compileSdk = 34
@@ -30,12 +31,11 @@ android {
         targetCompatibility = JavaVersion.VERSION_1_8
     }
 }
-
 dependencies {
     implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation ("com.clarifai.clarifai-api2:core:2.9.0") // Clarifai client
-    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
-    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation ("com.clarifai:clarifai-grpc:9.10.5") // Clarifai client
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
     implementation("com.google.android.material:material:1.10.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     testImplementation("junit:junit:4.13.2")
